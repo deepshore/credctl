@@ -70,6 +70,6 @@ credctl delete my-creds
 
 If the secret is not managed by `credctl`, the deletion is canceled:
 ```bash
-kubectl create secret generic not-managed-by-credctl --from-literal=my-value=my-key
+kubectl create secret generic not-managed-by-credctl --from-literal==my-key=my-value
 credctl delete not-managed-by-credctl
 ```
